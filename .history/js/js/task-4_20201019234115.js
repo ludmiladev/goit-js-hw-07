@@ -20,8 +20,8 @@ const countDown = () => {
 decrement.addEventListener("click", countDown);
 
 const increment = document.querySelector('#counter button[data-action="increment"]');
-const countKb = () => {
-   numCounter.textContent = counterValue += 1;
+const countUp = () => {
+   valueOfCounter.textContent = counterValue += 1;
 };
-increment.addEventListener("click", countKb);
+increment.addEventListener("click", countUp);
   

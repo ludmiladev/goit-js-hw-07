@@ -23,18 +23,18 @@
 //   border-color: #f44336;
 // }
 
+const input = document.querySelector('#validation-input');
 
+input.addEventListener('blur', (event) => {
 
+  if (input.getAttribute('data-length') == event.target.value.length) {
+    input.classList.add('valid')
+  } else {
+    input.classList.add('invalid')
+  }
+})
 
-const validationInput = document.querySelector('#validation-input');
-const dataLength = validationInput.getAttribute('data-length');
-
-validationInput.addEventListener('blur', () => {
-    if (validationInput.value.length !== dataLength) {
-        validationInput.classList.add('invalid');
-    }
-    if (validationInput.value.length === +dataLength) {
-        validationInput.classList.remove('invalid');
-        validationInput.classList.add('valid');
-    }
-});
+input.addEventListener('focus', () => {
+  input.classList.remove('invalid')
+  input.classList.remove('valid')
+})

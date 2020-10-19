@@ -34,4 +34,3 @@ galleryRef.insertAdjacentHTML('afterbegin', galleryHtml);
 
 
 
-

@@ -16,20 +16,12 @@
 // после чего вставит все li за одну операцию в список ul.ingredients.Для создания DOM - узлов
 // используй document.createElement().
 
-const ingredients = [
-  'Картошка',
-  'Грибы',
-  'Чеснок',
-  'Помидоры',
-  'Зелень',
-  'Приправы',
-  ];
 
   let htmlString = '';
 
   for (let i = 0; i < ingredients.length; i++) {
 
-    const item = document.createElement('li'); 
+    const itemCreator = document.createElement('li'); 
     item.textContent = ingredients[i];
     htmlString += item.outerHTML;
 

@@ -16,27 +16,36 @@
 // после чего вставит все li за одну операцию в список ul.ingredients.Для создания DOM - узлов
 // используй document.createElement().
 
+
+ingredients.forEach(el => {
+  const listItemRef = document.createElement('li');
+  const listRef = document.querySelector('#ingredients');
+  listItemRef.textContent = el;
+  listRef.appendChild(listItemRef);
+});
+
+
 const ingredients = [
-  'Картошка',
-  'Грибы',
-  'Чеснок',
-  'Помидоры',
-  'Зелень',
-  'Приправы',
-  ];
+    'Картопля',
+    'Гриби',
+    'Часник',
+    'Помідори',
+    'Зелень',
+    'Приправи',
+];
 
-  let htmlString = '';
+let htmlString = '';
 
-  for (let i = 0; i < ingredients.length; i++) {
+for (let i = 0; i < ingredients.length; i++) {
 
-    const item = document.createElement('li'); 
-    item.textContent = ingredients[i];
-    htmlString += item.outerHTML;
+    const itemCreator = document.createElement('li');
+    itemCreator.textContent = ingredients[i];
+    htmlString += itemCreator.outerHTML;
 
-  }
+}
 
-  console.log(htmlString); 
+console.log(htmlString);
 
-  const nav = document.querySelector("#ingredients");
+const nav = document.querySelector("#ingredients");
 
-  nav.insertAdjacentHTML('afterbegin', htmlString);
+nav.insertAdjacentHTML('afterbegin', htmlString);

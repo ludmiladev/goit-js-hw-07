@@ -10,8 +10,8 @@
 //-------------------------- В Ы П О Л Н Е Н И Е ------------------------------------------------------------
 
 const listRef = document.querySelectorAll('.item');
-console.log(`У списку ${listRef.length} категорії.`);
+console.log(`У списку ${listRef} категорії.`);
 
 
-const headingRef = document.querySelectorAll('.item > h2');
+const headingRef = document.querySelectorAll('h2');
 headingRef.forEach(el => console.log(`Категорія: ${el.textContent}\nКількість елементів: ${el.nextElementSibling.children.length}`));

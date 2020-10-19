@@ -9,12 +9,12 @@
 
 
 
-const input = document.querySelector('#name-input');
-const text = document.querySelector('#name-output');
+// const input = document.querySelector('#name-input');
+// const enteredName = document.querySelector('#name-output');
 
-input.addEventListener('input', (event) => {
-    text.textContent = event.target.value;
-    if (input.value === '') {
-        text.textContent = 'незнакомец';
-    }
-});
+// input.addEventListener('input', (event) => {
+//   enteredName.textContent = event.target.value;
+//   if (input.value === '') {
+//     enteredName.textContent = 'незнакомец';
+//   }
+// })

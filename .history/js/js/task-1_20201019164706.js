@@ -9,9 +9,21 @@
 
 //-------------------------- В Ы П О Л Н Е Н И Е ------------------------------------------------------------
 
-const listRef = document.querySelectorAll('.item');
-console.log(`У списку ${listRef.length} категорії.`);
+const listRef = document.querySelector('#categories');
 
+console.log(`
+    У списку ${listRef.children.length} категорії.
+`);
 
-const headingRef = document.querySelectorAll('.item > h2');
-headingRef.forEach(el => console.log(`Категорія: ${el.textContent}\nКількість елементів: ${el.nextElementSibling.children.length}`));
+const liEl = listRef.querySelectorAll('li.item');
+liEl.forEach(element => {
+
+  console.log(`
+    Категорія: ${element.querySelector('h2').textContent}.
+  `);
+
+  console.log(`
+    Кількість: ${element.querySelector('ul').children.length}.
+  `);
+  
+});

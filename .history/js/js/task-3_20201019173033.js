@@ -29,9 +29,18 @@ const images = [
 
 const galleryRef = document.querySelector('#gallery');
 galleryRef.classList.add('gallery');
-const galleryHtml = images.reduce((acc, { url, alt }) => acc + `<li class="gallery__item"><img src="${url}" alt="${alt}"></li>`, ``);
-galleryRef.insertAdjacentHTML('afterbegin', galleryHtml);
 
 
 
+const galleryEl = document.querySelector('ul#gallery');
 
+const imgList = images.map(slide => {
+    const addLiEl = document.createElement('li');
+    const addImgEl = document.createElement('img');
+    addImgEl.src = slide.url;
+    addImgEl.alt = slide.alt;
+    addLiEl.appendChild(addImgEl);
+    return addLiEl;
+  });
+  
+  galleryEl.append(...imgList);

@@ -17,19 +17,19 @@
 // используй document.createElement().
 
 const ingredients = [
-  'Картошка',
-  'Грибы',
-  'Чеснок',
-  'Помидоры',
-  'Зелень',
-  'Приправы',
+    'Картопля',
+    'Гриби',
+    'Часник',
+    'Помідори',
+    'Зелень',
+    'Приправи',
   ];
 
   let htmlString = '';
 
   for (let i = 0; i < ingredients.length; i++) {
 
-    const item = document.createElement('li'); 
+    const itemCreator = document.createElement('li'); 
     item.textContent = ingredients[i];
     htmlString += item.outerHTML;
 

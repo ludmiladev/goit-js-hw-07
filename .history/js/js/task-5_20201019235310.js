@@ -13,8 +13,8 @@ const input = document.querySelector('#name-input');
 const text = document.querySelector('#name-output');
 
 input.addEventListener('input', (event) => {
-    text.textContent = event.target.value;
-    if (input.value === '') {
-        text.textContent = 'незнакомец';
-    }
-});
+  text.textContent = event.target.value;
+  if (input.value === '') {
+    text.textContent = 'незнакомец';
+  }
+})

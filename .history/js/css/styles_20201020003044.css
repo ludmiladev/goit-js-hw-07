@@ -27,10 +27,15 @@
 
 /* ----------------------------------------------------------ЗАДАНИЕ №7---------------------------------------------------- */
 #font-size-control {
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 #controls {
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
+#boxes {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
