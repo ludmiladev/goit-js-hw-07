@@ -10,6 +10,8 @@
 //   <button type="button" data-action="increment">+1</button>
 // </div>
 
+//-------------------------- В Ы П О Л Н Е Н И Е ------------------------------------------------------------
+
 let counterValue = 0;
 const numCounter = document.querySelector("#value");
 

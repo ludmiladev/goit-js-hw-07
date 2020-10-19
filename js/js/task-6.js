@@ -24,7 +24,7 @@
 // }
 
 
-
+//-------------------------- В Ы П О Л Н Е Н И Е ------------------------------------------------------------
 
 const validationInput = document.querySelector('#validation-input');
 const dataLength = validationInput.getAttribute('data-length');

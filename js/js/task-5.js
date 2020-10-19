@@ -7,7 +7,7 @@
 // <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
 
 
-
+//-------------------------- В Ы П О Л Н Е Н И Е ------------------------------------------------------------
 
 const input = document.querySelector('#name-input');
 const text = document.querySelector('#name-output');
